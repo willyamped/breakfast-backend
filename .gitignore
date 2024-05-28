@@ -2,6 +2,10 @@
 bin/
 obj/
 
+Requests/Breakfast/
+*.http
+Requests/
+
 # User-specific files
 *.rsuser
 *.suo

@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.Xml.Schema;
 using BuberBreakfast.ServiceErrors;
 using ErrorOr;
@@ -8,7 +9,9 @@ public class Breakfast {
   public const int MaxNameLength = 50;
   public const int MinDescriptionLength = 3;
   public const int MaxDescriptionLength = 150;
-  public Guid Id { get; }
+
+  [Key]
+  public Guid Id { get; set;}
   public string Name { get; }
   public string Description { get; }
   public DateTime StartDateTime { get; }
@@ -17,6 +20,7 @@ public class Breakfast {
   public List<string> Savory { get; }
   public List<string> Sweet { get; }
 
+  public Breakfast() {}
   private Breakfast(
     Guid id,
     string name,
