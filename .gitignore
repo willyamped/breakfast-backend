@@ -1,0 +1,159 @@
+# Ignore build output directories
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files by Visual Studio
+.vscode/
+.vscode/**/*
+**/.DS_Store
+**/.vs
+.vs/
+*.ncrunchsolution
+*.ncrunchproject
+.ncrunch*
+*.localhistory
+
+# Rider specific
+.idea/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+.vscode/*
+.history/
+.settings/
+.eslintcache
+*.sublime-*
+*.tmproj
+*.tmProperties
+.vscode-test/
+
+# JetBrains Rider
+.idea/
+.idea_modules/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/libraries
+.idea/**/shelf
+.idea/**/storage_v2
+.idea/**/window.state.xml
+.idea/**/usage.statistics.xml
+.idea/**/taskState.xml
+
+# JetBrains ReSharper
+_ReSharper.Caches/
+*_ReSharper*/
+
+
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Files built by Visual Studio
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NCrunch
+.ncrunchsolution
+.ncrunchproject
+.ncrunch*
+*.localhistory
+
+# Coverity
+**/Coverity/
+**/Coverity/
+
+# Staging VS2017
+**/ipch/
+*.vcxproj.user
+*.h.tlog
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Build folder
+build/
+
+# Python virtual environment
+.env/
+
+# Vcpkg
+vcpkg/
+
+# Auto-generated user files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono auto generated files
+mono_crash.*
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+NuGet.config
+NuGet.exe
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains Rider
+.idea/
+
+# Rider specific
+.idea/
+.idea/**/*
+**/.DS_Store
+**/.vs
+.vs/
+*.ncrunchsolution
+*.ncrunchproject
+.ncrunch*
+*.localhistory
