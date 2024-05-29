@@ -25,9 +25,34 @@ namespace BuberBreakfast.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("EndDateTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("LastModifiedDateTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Savory")
+                        .IsRequired()
+                        .HasColumnType("json");
+
+                    b.Property<DateTime>("StartDateTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Sweet")
+                        .IsRequired()
+                        .HasColumnType("json");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Breakfasts");
+                    b.ToTable("Breakfasts", (string)null);
                 });
 #pragma warning restore 612, 618
         }

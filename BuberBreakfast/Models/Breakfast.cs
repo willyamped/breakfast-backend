@@ -11,17 +11,17 @@ public class Breakfast {
   public const int MaxDescriptionLength = 150;
 
   [Key]
-  public Guid Id { get; set;}
-  public string Name { get; }
-  public string Description { get; }
-  public DateTime StartDateTime { get; }
-  public DateTime EndDateTime { get; }
-  public DateTime LastModifiedDateTime { get; }
-  public List<string> Savory { get; }
-  public List<string> Sweet { get; }
+  public Guid Id { get; set; }
+  public string Name { get; set; }
+  public string Description { get; set; }
+  public DateTime StartDateTime { get; set; }
+  public DateTime EndDateTime { get; set; }
+  public DateTime LastModifiedDateTime { get; set; }
+  public List<string> Savory { get; set; }
+  public List<string> Sweet { get; set; }
 
   public Breakfast() {}
-  private Breakfast(
+  public Breakfast(
     Guid id,
     string name,
     string description,

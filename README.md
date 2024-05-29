@@ -23,4 +23,6 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet ef migrations add InitialCreate
 
 dotnet ef database update
+
+mysql -u root -p -h localhost -P 3306 buberbreakfast
 ```
