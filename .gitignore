@@ -5,6 +5,7 @@ obj/
 Requests/Breakfast/
 *.http
 Requests/
+.env
 
 # User-specific files
 *.rsuser
