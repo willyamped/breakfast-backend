@@ -2,10 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using BuberBreakfast.Models;
 using System.Text.Json;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace BuberBreakfast.Data
 {
-    public class BreakfastDbContext : DbContext
+    public class BreakfastDbContext : IdentityDbContext<ApplicationUser>
     {
         public BreakfastDbContext(DbContextOptions<BreakfastDbContext> options)
             : base(options)
@@ -13,6 +14,7 @@ namespace BuberBreakfast.Data
         }
 
         public DbSet<Breakfast> Breakfasts { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -39,6 +41,8 @@ namespace BuberBreakfast.Data
                       .HasConversion(stringListConverter)
                       .HasColumnType("json");
             });
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

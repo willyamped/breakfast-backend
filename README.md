@@ -1,3 +1,6 @@
+ ## Steps
+ 1. Run `dotnet restore` to install all packages
+ 
  ## List of Commands Used
  ```
  dotnet new sln -o BuberBreakfast 
@@ -20,7 +23,7 @@ dotnet add package Microsoft.EntityFrameworkCore
 
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
-dotnet ef migrations add InitialCreate
+dotnet ef migrations add <MIGRATION_NAME> e.g InitialCreate or UpdateDbContext
 
 dotnet ef database update
 

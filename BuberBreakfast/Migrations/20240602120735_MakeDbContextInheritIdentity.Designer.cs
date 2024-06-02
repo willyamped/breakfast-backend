@@ -3,6 +3,7 @@ using System;
 using BuberBreakfast.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BuberBreakfast.Migrations
 {
     [DbContext(typeof(BreakfastDbContext))]
-    partial class BreakfastDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240602120735_MakeDbContextInheritIdentity")]
+    partial class MakeDbContextInheritIdentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
